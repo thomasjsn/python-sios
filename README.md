@@ -6,6 +6,9 @@ The goal is to make it easier to write Python scripts to read, process and act o
 * Linux environment (like a RaspBerry Pi)
 * Python3
 
+# Installation
+Just clone or download the files and put them in a `sios` folder inside your script folder.
+
 # Examples
 ## Read sensor data from Arduino
 
