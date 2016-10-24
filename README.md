@@ -10,13 +10,13 @@ The goal is to make it easier to write Python scripts to read, process and act o
 Just clone or download the files and put them in a `sios` folder inside your script folder.
 
 # Examples
-## Read sensor data from Arduino
-
+## Read and persist sensor data from Arduino
 ```python
 import sios
 
 arduino = sios.Serial('/dev/ttyACM0', 9600)
 temperature = sios.Measurement()
+r = sios.redis_server()
 
 while True:
     response = arduino.send('get')
@@ -31,6 +31,8 @@ while True:
     print(gas.length)   # print the number of points
     if gas.rising:      # if current measurement is outside the normal distribution (3 sigma)
         print('Rising!!')
+        
+    r.set('temperature', gas.get(1))  # Persist the last measurement point in Redis
 
     time.sleep(1)
 ```
