@@ -1,4 +1,4 @@
-#![Simplistic I/O Services](https://s3-eu-west-1.amazonaws.com/thomasjsn/public/github/sios/sios.png)
+![Simplistic I/O Services](http://i.imgur.com/en6Orqb.png)
 
 The goal is to make it easier to write Python scripts to read, process and act on sensor data.
 
