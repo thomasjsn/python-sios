@@ -5,9 +5,10 @@ class Watcher:
         self.client = client
 
     def set_value(self, new_value):
-        if self.value != new_value:
-            self.value = new_value
-            self.change()
+        self.client.publish(self.topic, new_value)
+#        if self.value != new_value:
+#            self.value = new_value
+#            self.change()
 
     def change(self):
         print('change: {} to {}'.format(self.topic, self.value))
