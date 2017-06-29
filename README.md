@@ -1,4 +1,4 @@
-![Simplistic I/O Services](http://i.imgur.com/en6Orqb.png)
+![Simplistic I/O Services](/media/sios_logo.png)
 
 The goal is to make it easier to write Python scripts to read, process and act on sensor data.
 
