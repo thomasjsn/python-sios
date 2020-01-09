@@ -1,16 +1,16 @@
-![Simplistic I/O Services](/media/sios_logo.png)
+![Simplistic I/O Services](media/sios_logo.png)
 
 The goal is to make it easier to write Python scripts to read, process and act on sensor data.
 
-# Requirements
+## Requirements
 * Linux environment (like a RaspBerry Pi)
 * Python3
 
-# Installation
+## Installation
 Just clone or download the files and put them in a `sios` folder inside your script folder.
 
-# Examples
-## Read and persist sensor data from Arduino
+## Examples
+### Read and persist sensor data from Arduino
 ```python
 import sios
 
@@ -36,3 +36,6 @@ while True:
 
     time.sleep(1)
 ```
+
+## Author
+[Thomas Jensen](https://thomas.stdout.no)
